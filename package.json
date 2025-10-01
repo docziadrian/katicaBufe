@@ -1,0 +1,20 @@
+{
+  "name": "katicabufe",
+  "version": "1.0.0",
+  "description": "Katica Büfé API",
+  "main": "server",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "author": "DAM",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
