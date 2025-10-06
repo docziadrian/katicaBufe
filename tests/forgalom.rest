@@ -1,0 +1,43 @@
+### GET all forgalom
+GET http://localhost:3000/forgalom/
+Content-Type: application/json
+
+
+### GET ONE forgalom
+GET http://localhost:3000/forgalom/246
+Content-Type: application/json
+
+
+### POST a forgalom
+POST http://localhost:3000/forgalom/
+Content-Type: application/json
+
+{
+    "termek": "Kola",
+    "vevo": "Tesco",
+    "kategoriaId": "1",
+    "egyseg": "db",
+    "nettoar": "100",
+    "mennyiseg": "1",
+    "kiadva": "false"
+}
+
+
+### PATCH a forgalom
+PATCH http://localhost:3000/forgalom/260
+Content-Type: application/json
+
+{
+    "termek": "Kola2",
+    "vevo": "Tesco2",
+    "kategoriaId": "1",
+    "egyseg": "db",
+    "nettoar": "100",
+    "mennyiseg": "1",
+    "kiadva": "false"
+}
+
+
+### DELETE a forgalom
+DELETE http://localhost:3000/forgalom/259
+Content-Type: application/json

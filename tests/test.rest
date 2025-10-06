@@ -1,9 +1,0 @@
-### GET forgalom
-
-GET http://localhost:3000/forgalom
-Content-Type: application/json
-
-
-### GET kategoria
-GET http://localhost:3000/kategoria/kategoria
-Content-Type: application/json

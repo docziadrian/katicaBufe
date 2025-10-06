@@ -1,0 +1,32 @@
+
+### GET kategoria
+GET http://localhost:3000/kategoria/
+Content-Type: application/json
+
+
+### Get one kategoria by id
+GET http://localhost:3000/kategoria/1
+Content-Type: application/json
+
+### Update kategoria
+PATCH http://localhost:3000/kategoria/3
+Content-Type: application/json
+
+{
+    "kategoriaNev": "Desszertek"
+}
+
+### POST new kategoria
+POST http://localhost:3000/kategoria/
+Content-Type: application/json
+
+{
+    "id": "3",
+    "kategoriaNev": "Desszertek"
+}
+
+
+
+### DELETE kategoria
+DELETE http://localhost:3000/kategoria/1
+Content-Type: application/json

@@ -2,17 +2,8 @@ const express = require("express");
 const cors = require("cors");
 const kategoriak = require("./modules/kategoriak");
 const forgalom = require("./modules/forgalom");
-
-const mysql = require("mysql");
+const statistics = require("./modules/statistics");
 const app = express();
-
-let pool = mysql.createPool({
-  connectionLimit: 10,
-  host: "127.0.0.1",
-  user: "root",
-  password: "",
-  database: "2025_katicabufe",
-});
 
 // Middlewarek
 app.use(cors());
@@ -24,6 +15,7 @@ app.get("/", (req, res) => {
 
 app.use("/kategoria", kategoriak);
 app.use("/forgalom", forgalom);
+app.use("/statistics", statistics);
 
 app.listen(3000, () => {
   console.log("Server is running on port 3000");
